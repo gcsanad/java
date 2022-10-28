@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset id="szinvalt">
+            <label for="nev">Megrendelő neve: <input type="text" id="neve" onfocus="atSzinnev()" onblur="visszaszinnev()"></label><br>
+            <label for="cim">Megrendelő címe: <input type="text" id="cime" onfocus="atSzincim()" onblur="visszaszincim()"></label><br>
+            <label for="tel">Megrendelő telefonszáma: <input type="text" id="telefonsz" value="+36" onfocus="atSzintel()" onblur="visszaszintel()"></label><br>
+            <input type="button" id="gomb" onclick="valt()" value="Elküld">
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <label for="vissza" id="visszaig">Visszaigazolás!</label><br>
+        <label for="nevgyujt">Név:<span id="valtnev">?</span></label><br>
+        <label for="cimgyujt">Cím:<span id="valtcim">?</span></label><br>
+        <label for="telgyujt">Telefonszáma:<span id="valttel">?</span></label>
+    </fieldset>
+</body>
+</html>
